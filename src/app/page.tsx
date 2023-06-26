@@ -1,18 +1,17 @@
 import fs from "fs";
-import { join } from 'path'
-import { serialize } from "next-mdx-remote/serialize"
+import { join } from 'path';
+import { serialize, } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
+import Link from "next/link";
+
+
 
 const projectsDirectory = join(process.cwd(), '/projects')
 
-function getProjectSlugs() {
-  return fs.readdirSync(projectsDirectory)
-}
-
-async function getFirstProjectsInfo(){
+async function getFirstProjectsInfo() {
   const directoryContent = fs.readdirSync(projectsDirectory)
 
-  return Promise.all(directoryContent.map( p => getProjectFronmatter(p)))
+  return Promise.all(directoryContent.map(p => getProjectFronmatter(p)))
 }
 
 async function getProjectFronmatter(projectPath: string) {
@@ -29,25 +28,27 @@ export default async function Home() {
 
 
   return (<>
-  <h1>Welcome from Cristina Dev</h1>
-  <h2>My portfolio</h2>
+    <main className={""}>
+      <h1>Welcome from Cristina Dev</h1>
+      <h2>My portfolio</h2>
+      <Link href="/about">Go to About Page</Link>
 
 
-    <h3>Develop Projects</h3>
+      <h3>Develop Projects</h3>
 
-    <ul>
-      {projects.map((p) => {
-        return (
-          <li key={p.frontmatter.name}>
-            Nombre: {p.frontmatter.name} <br />
-            Tecnologías: {p.frontmatter.technologies} <br />
-            Fecha: {p.frontmatter.date} <br />
-          </li>
+      <ul>
+        {projects.map((p) => {
+          return (
+            <li key={p.frontmatter.name}>
+              Nombre: {p.frontmatter.name} <br />
+              Tecnologías: {p.frontmatter.technologies} <br />
+              Fecha: {p.frontmatter.date} <br />
+            </li>
 
-        );
-      })}
-    </ul>
-
+          );
+        })}
+      </ul>
+    </main>
   </>
   )
 }
