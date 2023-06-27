@@ -1,40 +1,52 @@
 import fs from "fs";
-import { join } from 'path'
-import { serialize } from "next-mdx-remote/serialize"
+import { join } from 'path';
+import { serialize, } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
-import { todo } from "node:test";
+import Link from "next/link";
 
 const projectsDirectory = join(process.cwd(), '/projects')
 
-function getProjectSlugs() {
-  return fs.readdirSync(projectsDirectory)
-}
+async function getFirstProjectsInfo() {
+    const directoryContent = fs.readdirSync(projectsDirectory)
 
-async function getFirstProjectsInfo(){
-  const directoryContent = fs.readdirSync(projectsDirectory)
-
-  return Promise.all(directoryContent.map( p => getProjectFronmatter(p)))
+    return Promise.all(directoryContent.map(p => getProjectFronmatter(p)))
 }
 
 async function getProjectFronmatter(projectPath: string) {
-  const source = fs.readFileSync(
-    join(projectsDirectory, projectPath),
-    'utf8'
-  );
+    const source = fs.readFileSync(
+        join(projectsDirectory, projectPath),
+        'utf8'
+    );
 
-  return serialize<Record<string, unknown>, Record<string, "name" | "technologies" | "date">>(source, { parseFrontmatter: true });
+    return serialize<Record<string, unknown>, Record<string, "name" | "technologies" | "date">>(source, { parseFrontmatter: true });
 }
 
-export default async function Projects() {
-  const projects = await getFirstProjectsInfo();
-  const res = await fetch('https://...')
-  const markdown = await res.text()
+export default async function ProjectsPage() {
+    const projects = await getFirstProjectsInfo();
 
-  return(
 
-    //toDo
-    <div className="wrapper">
-     <MDXRemote compiledSource={""} scope={undefined} frontmatter={undefined} {...res} />
-    </div>
-  )
+    return (<>
+        <main className={""}>
+            <h1>Cristina Dev</h1>
+            <h2>My projects</h2>
+            <Link href="/">Go HOME</Link>
+
+
+            <h3>Develop Projects</h3>
+
+            <ul>
+                {projects.map((p) => {
+                    return (
+                        <li key={p.frontmatter.name}>
+                            Nombre: {p.frontmatter.name} <br />
+                            Tecnologías: {p.frontmatter.technologies} <br />
+                            Fecha: {p.frontmatter.date} <br />
+                        </li>
+
+                    );
+                })}
+            </ul>
+        </main>
+    </>
+    )
 }
