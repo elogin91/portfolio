@@ -1,5 +1,5 @@
 import React from "react";
-import { Envelope, Linkedin, Medium, Twitter } from "../icons";
+import { Envelope, Github, Linkedin, Medium, Twitter } from "../icons";
 
 type FooterProps = {
 	contactMeLinks: string[];
@@ -18,8 +18,8 @@ export const Footer = ({ contactMeLinks }: FooterProps) => {
 				<a href={contactMeLinks[2]} aria-label='Linkedin'>
 					<Linkedin className='icons_contactme' />
 				</a>
-				<a href={contactMeLinks[3]} aria-label='Medium'>
-					<Medium className='icons_contactme' />
+				<a href={contactMeLinks[3]} aria-label='Github'>
+					<Github className='icons_contactme' />
 				</a>
 			</div>
 		</footer>
