@@ -10,6 +10,12 @@
         font-family: Merriweather, Proxima Nova, sans-serif;
     }
     h1 {
-        @apply text-3xl sm:text-2xl;
+        @apply text-3xl text-night sm:text-2xl;
     }
+    h2 {
+		@apply text-2xl uppercase text-night font-semibold mb-6;
+	}
+}
+.icons_contactme {
+	@apply text-2xl sm:text-3xl text-night m-2;
 }

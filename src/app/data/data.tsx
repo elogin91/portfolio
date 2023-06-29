@@ -136,8 +136,8 @@ export const projects = [
 ];
 
 export const contactMeLinks = [
-	"time2code@gmail",
-	"twiter",
-	"linkedin",
-	"medium",
+	"cristina.al91@gmail",
+	"https://twitter.com/Elogin91",
+	"https://www.linkedin.com/in/elogin/",
+	"https://github.com/elogin91",
 ];
