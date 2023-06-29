@@ -13,66 +13,55 @@ module.exports = {
       rose: "#A04668",
       pink: "#AB4967",
       blue: "#4D7C8A",
+      white: "#fff",
 
     },
-
     fontFamily: {
-      sans: ["Georgia", "sans-serif"],
-      serif: ["Merriweather", "serif"],
-      display: ["Oswald"],
-    },
-
-    fontSize: {
-      sm: "0.8rem",
-      base: "1rem",
-      lg: "1.15rem",
-      xl: "1.25rem",
-      "2xl": "1.563rem",
-      "3xl": "1.963rem",
-      "4xl": "2.441rem",
-      "5xl": "3.052rem",
-      "6xl": "3.5rem",
-
-    },
-
-    minWidth:{
-      0: "0",
-      100: "100px",
-    },
-
-    extend: {
-      width: 
-      {
-        "1/3-g": "30%",
-      },
-      minHeight:
-      {
-        50: "55px",
-      },
-      boxShadow: 
-      {
-        footer: "0px -7px 41px 3px rgba(175, 175, 175, 0.25)",
-      },
-      backgroundImage: 
-      {
-        header:"linear-gradient(98.85deg, #557AFF 7.8%, rgba(239, 252, 255. 0) 139.35%);",
-        
-      },
-      spacing: 
-      {
+			sans: ["Georgia", "sans-serif"],
+			serif: ["Merriweather", "serif"],
+			display: ["Oswald"],
+		},
+		fontSize: {
+			sm: "0.8rem",
+			base: "1rem",
+			lg: "1.15rem",
+			xl: "1.25rem",
+			"2xl": "1.563rem",
+			"3xl": "1.953rem",
+			"4xl": "2.441rem",
+			"5xl": "3.052rem",
+			"6xl": "3.5rem",
+		},
+		minWidth: {
+			0: "0",
+			100: "100px",
+		},
+		extend: {
+			width: {
+				"1/3-g": "30%",
+			},
+			minHeight: {
+				50: "55px",
+			},
+			boxShadow: {
+				footer: "0px -7px 41px 3px rgba(175, 175, 175, 0.25)",
+			},
+			backgroundImage: {
+				header:
+					"linear-gradient(98.85deg, #BC8DA0 7.8%, rgba(239, 252, 255, 0) 139.35%);",
+			},
+			spacing: {
 				"8xl": "96rem",
 				"9xl": "128rem",
 			},
-			borderRadius: 
-      {
+			borderRadius: {
 				"4xl": "2rem",
 			},
-			flexBasis: 
-      {
+			flexBasis: {
 				"4/5": "66%",
 			},
-    },
-    screens: {
+		},
+		screens: {
 			sm: "640px",
 			// => @media (min-width: 640px) { ... }
 
@@ -88,6 +77,6 @@ module.exports = {
 			"2xl": "1536px",
 			// => @media (min-width: 1536px) { ... }
 		},
-  },
-  plugins: [],
-}
+	},
+	plugins: [],
+};

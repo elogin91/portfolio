@@ -4,7 +4,7 @@ import { serialize, } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import Link from "next/link";
 
-export default async function Home() {
+export default async function AboutMePage() {
 
   return (
     <>
