@@ -32,7 +32,7 @@ export default async function ProjectsPage() {
 
                 {projects.map((p) => {
                     return (
-                        <ProjectCard data={p.frontmatter} />
+                        <ProjectCard data={p.frontmatter} key={p.frontmatter.name}/>
                     );
                 })}
             </div>
