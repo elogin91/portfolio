@@ -2,7 +2,7 @@ import fs from "fs";
 import { join } from 'path';
 import { serialize, } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
-import Link from "next/link";
+import { ProjectCard, ProjectCardType } from "../components/projectCard";
 
 const projectsDirectory = join(process.cwd(), '/projects')
 
@@ -17,8 +17,7 @@ async function getProjectFronmatter(projectPath: string) {
         join(projectsDirectory, projectPath),
         'utf8'
     );
-
-    return serialize<Record<string, unknown>, Record<string, "name" | "technologies" | "date">>(source, { parseFrontmatter: true });
+    return serialize<Record<string, unknown>, ProjectCardType>(source, { parseFrontmatter: true });
 }
 
 export default async function ProjectsPage() {
@@ -26,27 +25,18 @@ export default async function ProjectsPage() {
 
 
     return (<>
-        <main className={""}>
-            <h1>Cristina Dev</h1>
-            <h2>My projects</h2>
-            <Link href="/">Go HOME</Link>
+        <div className="flex flex-col w11/12 content-center m-auto mt-10 ml-10">
+            <h2 className="text-2xl font-bold mb-4">My projects</h2>
 
+            <div className="flex flex-row flex-wrap gap-10 mt-6">
 
-            <h3>Develop Projects</h3>
-
-            <ul>
                 {projects.map((p) => {
                     return (
-                        <li key={p.frontmatter.name}>
-                            Nombre: {p.frontmatter.name} <br />
-                            Tecnologías: {p.frontmatter.technologies} <br />
-                            Fecha: {p.frontmatter.date} <br />
-                        </li>
-
+                        <ProjectCard data={p.frontmatter} />
                     );
                 })}
-            </ul>
-        </main>
+            </div>
+        </div>
     </>
     )
 }
