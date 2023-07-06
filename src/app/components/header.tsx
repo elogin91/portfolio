@@ -2,7 +2,16 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export const Header = ({ pages, name } : {pages:any[], name:any}) => {
+type HeaderProps = {
+  name: string,
+  pages: {
+    id: number,
+    label: string,
+    link: string
+  }[]
+}
+
+export const Header = ({ pages, name } : HeaderProps) => {
   return (
     <header className='flex flex-col relative bg-linear-D9D0DE w-full h-48'>
       <div className='flex flex-col justify-around h-full sm:px-6 px:1 bg-header z-10'>
