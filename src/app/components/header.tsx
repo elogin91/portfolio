@@ -13,7 +13,7 @@ type HeaderProps = {
 
 export const Header = ({ pages, name } : HeaderProps) => {
   return (
-    <header className='flex flex-col relative bg-linear-D9D0DE w-full h-48'>
+    <header className='flex flex-col relative  w-full h-48'>
       <div className='flex flex-col justify-around h-full sm:px-6 px:1 bg-header z-10'>
         <nav className='text-right flex flex-row sm:gap-6 self-end gap-1'>
           {pages.map((page) => {
@@ -21,8 +21,7 @@ export const Header = ({ pages, name } : HeaderProps) => {
               aria-label={page.label}
               key={page.id}
               href={page.link}
-              className='px-6 py-2 min-w-100 hover:bg-pink font-display uppercase tracking-wide bg-none
-              '>
+              className='px-6 py-2 min-w-100 hover:bg-puce font-Oswald  font-semibold uppercase tracking-wide bg-none'>
               {page.label}
             </Link>)
           })}
@@ -35,8 +34,8 @@ export const Header = ({ pages, name } : HeaderProps) => {
         priority 
         height={400} 
         width={2000} 
-        className='w-full h-48 object-cover object-top absolute mb-6' 
-        src='/images/fondoFlor.jpg' 
+        className='w-full h-48 object-cover  absolute mb-6' 
+        src='/images/fondoFlor2.jpg' 
         alt={`Image of ${name}` }
         aria-label={`Image of ${name}` } 
       />

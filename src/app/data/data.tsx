@@ -12,7 +12,7 @@ export const pages = [
 	{
 		id: 3,
 		label: "Contact Me",
-		link: "/about",
+		link: "/contactMe",
 	},
 ];
 

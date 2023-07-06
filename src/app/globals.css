@@ -8,14 +8,27 @@
     }
     html {
         font-family: Merriweather, Proxima Nova, sans-serif;
+        @apply bg-lavender;
     }
     h1 {
-        @apply text-3xl text-night sm:text-2xl;
+        @apply text-3xl text-night  font-bold sm:text-2xl;
     }
     h2 {
 		@apply text-2xl uppercase text-night font-semibold mb-6;
 	}
+
 }
 .icons_contactme {
 	@apply text-2xl sm:text-3xl text-night m-2;
+}
+.profileImage {
+	@apply rounded-full;
+	width: 240px;
+	height: 400px;
+	object-fit: cover;
+	object-position: 50% 4%;
+}
+
+section {
+	@apply sm:mb-10 mb-5;
 }

@@ -48,7 +48,7 @@ module.exports = {
 			},
 			backgroundImage: {
 				header:
-					"linear-gradient(98.85deg, #BC8DA0 7.8%, rgba(239, 252, 255, 0) 139.35%);",
+					"linear-gradient(10deg, #ab4967 0%, rgba(217,208,222, 0) 60%);",
 			},
 			spacing: {
 				"8xl": "96rem",
