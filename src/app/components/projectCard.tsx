@@ -11,18 +11,19 @@ export type ProjectCardType = {
 }
 
 type ProjectCardProps = {
-    data: ProjectCardType
+    key: string;
+    data: ProjectCardType;
 }
 
 export const ProjectCard = ({ data }: ProjectCardProps) => {
 
     return (
-        <div className='bg-blue'>
+        <div className='rounded-lg shadow-lg bg-puce w-full sm:w-1/3-g'>
             <Image
                 aria-label={`Image of ${data.name}`}
                 src={data.image}
                 alt={data.name}
-                className='object-cover w-full h-48'
+                className=' rounded-lg object-cover w-full '
                 priority={false}
                 width={500}
                 height={250}
@@ -36,8 +37,8 @@ export const ProjectCard = ({ data }: ProjectCardProps) => {
                     {data.date}
                 </p>
 
-                <div className='flex flex-row mt-4 justify-between'>
-                    <a href={data.link} className='flex items-center'>
+                <div className='flex flex-row mt-4 justify-between hover:bg-pink rounded-lg'>
+                    <a href={data.link} className='flex items-center '>
                         <Github className='icons_contactme' />
                         <span className='text-night'> {data.link}</span>
                     </a>

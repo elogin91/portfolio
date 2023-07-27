@@ -5,7 +5,7 @@ export default async function AboutMePage() {
 
   return (
     <>
-      <main className='flex flex-col items-center sm:mb-32 mb-16'>
+      <div className='flex flex-col items-center '>
         <section className='flex sm:flex-row sm:w-10/12 items-center flex-col w-full '>
           <div className='sm:w-1/3 w-full flex justify-center mt-12'>
             <Image
@@ -33,6 +33,7 @@ export default async function AboutMePage() {
             {aboutMeData.highlightedBody}
           </p>
         </section>
+
         <section className='flex sm:flex-row sm:w-10/12 p-10 items-center w-full flex-col'>
           <div className='flex flex-col  w-full mb-10 sm:mb-0 sm:w-7/12'>
             <p>
@@ -51,7 +52,7 @@ export default async function AboutMePage() {
             />
           </div>
         </section>
-      </main>
+      </div>
     </>
   )
 }

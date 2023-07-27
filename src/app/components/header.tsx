@@ -21,7 +21,7 @@ export const Header = ({ pages, name } : HeaderProps) => {
               aria-label={page.label}
               key={page.id}
               href={page.link}
-              className='px-6 py-2 min-w-100 hover:bg-puce font-Oswald  font-semibold uppercase tracking-wide bg-none'>
+              className='px-6 py-2 min-w-100 hover:bg-puce font-Oswald rounded-lg font-semibold uppercase tracking-wide bg-none'>
               {page.label}
             </Link>)
           })}
