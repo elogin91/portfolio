@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from './styles.module.css'
 
 export default function AboutLayout({
     children,
@@ -8,7 +7,7 @@ export default function AboutLayout({
   }) {
     return (
         <>
-            <main className={styles.main}>
+            <main className='sm:mb-32 mb-16'>
                 {children}
             </main>
         </>

@@ -18,15 +18,15 @@ type ProjectCardProps = {
 export const ProjectCard = ({ data }: ProjectCardProps) => {
 
     return (
-        <div className='rounded-lg shadow-lg bg-puce w-full sm:w-1/3-g'>
+        <div className='rounded-lg shadow-lg bg-puce w-full sm:w-1/3-g sm:max-w-xs'>
             <Image
                 aria-label={`Image of ${data.name}`}
                 src={data.image}
                 alt={data.name}
                 className=' rounded-lg object-cover w-full '
                 priority={false}
-                width={500}
-                height={250}
+                width={320}
+                height={320}
             />
             <div className='p-4'>
                 <h3 className='text-lg font-medium'>
