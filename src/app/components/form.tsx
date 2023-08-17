@@ -1,7 +1,8 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 
 export const Form = () => {
+    const [isMessageSent, setMessageSent] = useState<boolean>(false);
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
 
@@ -32,6 +33,7 @@ export const Form = () => {
             if (!response.ok) {
                 throw new Error('HTTP ERROR! status: ' + response.status)
             }
+            setMessageSent(true);
         }
         catch (error: any) {
             console.log("There was a problem with the fetch operation" + error.mesagge);
@@ -67,6 +69,7 @@ export const Form = () => {
                 <textarea id='message' name='mesagge' className="input-form" required minLength={25} maxLength={520} />
             </div>
             <button type="submit" className="button-form">Send Message</button>
+            {isMessageSent && <p> Message has been sent.</p>}
         </form>
     )
 }
