@@ -1,5 +1,5 @@
 import React from "react";
-import { Envelope, Github, Linkedin, Medium, Twitter } from "../icons";
+import { Envelope, Github, Linkedin, Twitter } from "../icons";
 
 type FooterProps = {
 	contactMeLinks: string[];
