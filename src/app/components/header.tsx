@@ -15,7 +15,9 @@ export const Header = ({ pages, name } : HeaderProps) => {
   return (
     <header className='flex flex-col relative  w-full h-48'>
       <div className='flex flex-col justify-around h-full sm:px-6 px:1 bg-header z-10'>
-        <nav className='text-right flex flex-row sm:gap-6 self-end gap-1'>
+
+        
+        <nav className='text-right flex hidden sm:block flex-row sm:gap-6 self-end gap-1'>
           {pages.map((page) => {
             return (<Link
               aria-label={page.label}

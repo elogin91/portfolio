@@ -12,7 +12,7 @@ module.exports = {
       puce: "#BC8DA0",
       rose: "#A04668",
       pink: "#AB4967",
-      blue: "#4D7C8A",
+      blue: "#ACB1E0",
       white: "#fff",
 
     },

@@ -7,8 +7,8 @@
         font-family: Oswald, Proxima Nova, system-ui, sans-serif;
     }
     html {
-        font-family: Merriweather, Proxima Nova, sans-serif;
-        @apply bg-lavender;
+        font-family: Oswald, system-ui, sans-serif;
+        @apply bg-lavender text-base;
     }
     h1 {
         @apply text-3xl text-night  font-bold sm:text-2xl;
@@ -34,12 +34,20 @@ section {
 }
 
 .input-form {
-    @apply border border-lavender p-2 w-full bg-puce font-light;
+    @apply border border-pink p-2 w-full bg-lavender text-night font-semibold focus:bg-white;
 }
 
 .label-form {
     @apply font-semibold mb-2 text-night;
 }
 .button-form {
-    @apply bg-puce rounded-md hover:bg-lavender min-w-100 p-4 text-night font-semibold;
+    @apply bg-pink rounded-md min-w-100 p-4 text-white font-semibold;
+}
+
+.button-form:hover {
+    @apply bg-lavender text-night;
+}
+
+.display-linebreak {
+    white-space: pre-line;
 }

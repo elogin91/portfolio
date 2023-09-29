@@ -22,7 +22,7 @@ export default async function AboutMePage() {
             <h2>
               {aboutMeData.title}
             </h2>
-            <p>
+            <p className='display-linebreak'>
               {aboutMeData.body}
             </p>
           </div>
@@ -36,7 +36,7 @@ export default async function AboutMePage() {
 
         <section className='flex sm:flex-row sm:w-10/12 p-10 items-center w-full flex-col'>
           <div className='flex flex-col  w-full mb-10 sm:mb-0 sm:w-7/12'>
-            <p>
+            <p className='display-linebreak'>
               {aboutMeData.body2}
             </p>
           </div>

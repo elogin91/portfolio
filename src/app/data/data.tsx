@@ -1,29 +1,29 @@
 export const pages = [
 	{
 		id: 1,
-		label: "About Me",
+		label: "Sobre mí",
 		link: "/",
 	},
 	{
 		id: 2,
-		label: "My Projects",
+		label: "Proyectos",
 		link: "/project",
 	},
 	{
 		id: 3,
-		label: "Contact Me",
+		label: "Contáctame",
 		link: "/contactMe",
 	},
 ];
 
 export const aboutMeData = {
 	name: "Cristina Front End Developer",
-	title: "Welcome! My name is Cristina Álvarez",
-	body: "A software developer with a passion for creatting new world with code. I started my journey into the world of software development a few years ago, and since then I've been constantly learning and improving my skills. My background is in administrative magement, but I'm always looking for opportunities to branch out and explore new technologies.",
+	title: "¡Bienvenido, mi nombre es Cristina!",
+	body: "Hace poco más de un año empecé a sumergirme en el mundo de la programación, desde entonces, como buena apasionada de las IT no he dejado de formarme y aprender sobre las tecnología más novedosas en el Desarrollo Web.\nActualmente trabajo a tiempo parcial realizando labores administrativas durante los fines de semana, sin embargo ya me siento preparada para incorporarme como 'Software Developer' al mundo laboral.",
 	highlightedBody:
-		"I'm looking for my first work oportunity in the develop web. I'm constantly seeking new challenges and projects to work on. I'm particularly interested in web development, and I've completed several personal projects in these areas. I'm always eager to take on new challenges and collaborate with others, and I believe that working on projects is the best way to learn and grow as a software developer.. If you're interested in learning more about my skills and experience, feel free to contact with me. I'd love to hear from you and discuss potential opportunities to collaborate on projects or learn from each other",
+		"Actualmente estoy en busca de mi primera oportunidad laboral como desarrolladora. En paralelo voy actualizando mis habilidades y conocimientos de programación,  para seguir creciendo como programadora y crear un código de más calidad. Dichos conocimientos los voy poniendo a prueba realizando proyectos, ya sean individuales como este Portfolio o trabajando en equipo con otros compañeros. Dentro del la programación, me especializo en el 'Desarrollo de aplicaciones Web', si estás interesado en saber más sobre mi trayectoría o las tecnologías con las que tengo experiencia no dudes en contactar conmigo desde el apartado 'Contáctame'.",
 	body2:
-		"In my free time I like to travel, read books... my favorite activity is to throw myself on the sofa to watch series and movies with my dogs and family.",
+		"Además de la programación tengo otras dos grandes pasiones, viajar por distintos lugares para probar los platos típicos de la zona, y hacer excursiones con mis perritos, Tobi y Lola, por el campo, aunque si el tiempo no acompaña no despreciamos una buena sesión de Sofa, Película y Manta.\nTambién me gusta leer, escuchar música pop/rock y  jugar a juegos online.",
 };
 
 export const contactMeText = {
@@ -31,45 +31,8 @@ export const contactMeText = {
 	body: "I am a web developer and law graduate with a passion for creat new pretty, secures, and cuality applications.I bring a new energy and unique blend of technical and autolearning. I'm always eager to take on new challenges and collaborate with others technicals. If you'd like to get in touch, simply fill out the form below and I'll get back to you as soon as possible. Im waitting to know you and learn and work more about your project!",
 };
 
-export const projects = [
-	{
-		title: "",
-		body1:
-			"A web application ...",
-		body2: "Technologies used: HTML, CSS, JavaScript.",
-		image: "prueba.jpg",
-		links: [
-			{
-				text: "Source Code",
-				url: "https://github.com/sdasdasdasdaadsads",
-			},
-			{
-				text: "Live Site",
-				url: "https://asdasdadasd.es",
-			},
-		],
-	},
-
-	{
-		title: "",
-		body1: " ",
-		body2: "Technologies used:",
-		image: ".png",
-		links: [
-			{
-				text: "Source Code",
-				url: "https://github.com",
-			},
-			{
-				text: "Live Site",
-				url: "https://.es",
-			},
-		],
-	},
-];
-
 export const contactMeLinks = [
-	"cristina.al91@gmail",
+	"/contactMe",
 	"https://twitter.com/Elogin91",
 	"https://www.linkedin.com/in/elogin/",
 	"https://github.com/elogin91",

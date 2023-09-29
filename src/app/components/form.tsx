@@ -55,7 +55,7 @@ export const Form = () => {
     }, [isMessageSent])
 
     return (
-        <form onSubmit={handleSubmit} className="bg-blue p-10" ref={formRef}>
+        <form onSubmit={handleSubmit} className="bg-puce p-10" ref={formRef}>
             <div className="mb-4 ">
                 <label className="label-form" htmlFor='name'>
                     Name
