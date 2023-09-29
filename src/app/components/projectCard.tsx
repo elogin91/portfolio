@@ -5,7 +5,7 @@ import { Github } from '../icons';
 export type ProjectCardType = {
     name: string;
     technologies: string;
-    date: string;
+    description: string;
     link: string;
     image: string;
 }
@@ -32,15 +32,16 @@ export const ProjectCard = ({ data }: ProjectCardProps) => {
                 <h3 className='text-lg font-medium'>
                     {data.name}
                 </h3>
+                <h4 className='text-sm mt-2 min-h-50'>
+                Technologies: {data.technologies}
+                </h4>
                 <p className='text-sm mt-2 min-h-50'>
-                    {data.technologies}
-                    {data.date}
+                   {data.description}
                 </p>
-
                 <div className='flex flex-row mt-4 justify-between hover:bg-pink rounded-lg'>
                     <a href={data.link} className='flex items-center '>
                         <Github className='icons_contactme' />
-                        <span className='text-night'> {data.link}</span>
+                        <span className='text-night text-sm'> Repository of "{data.name}"</span>
                     </a>
                 </div>
             </div>
