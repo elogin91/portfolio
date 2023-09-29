@@ -41,7 +41,7 @@ export const ProjectCard = ({ data }: ProjectCardProps) => {
                 <div className='flex flex-row mt-4 justify-between hover:bg-pink rounded-lg'>
                     <a href={data.link} className='flex items-center '>
                         <Github className='icons_contactme' />
-                        <span className='text-night text-sm'> Repository of "{data.name}"</span>
+                        <span className='text-night text-sm'> Repository of {data.name}</span>
                     </a>
                 </div>
             </div>
