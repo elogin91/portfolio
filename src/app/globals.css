@@ -48,6 +48,14 @@ section {
     @apply bg-lavender text-night;
 }
 
+.button-nav:hover ~ .menu {
+    @apply block;
+}
+
+.menu:hover {
+    @apply block;
+}
+
 .display-linebreak {
     white-space: pre-line;
 }
