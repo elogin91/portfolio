@@ -58,7 +58,7 @@ export const Header = ({ pages, name }: HeaderProps) => {
               leaveTo="transform opacity-0 scale-95"
             >
 
-              <Menu.Items className="absolute right-5 z-10 mt-24 w-100 origin-top-right rounded-md bg-puce shadow-lg ">
+              <Menu.Items className="absolute right-2 z-10 mt-24 w-100 origin-top-right rounded-md bg-puce shadow-lg ">
                 <div
                   id="navbar-default"
                   className='py-1' >
