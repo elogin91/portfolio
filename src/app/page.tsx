@@ -12,9 +12,9 @@ export default async function AboutMePage() {
               priority={false}
               width={240}
               height={400}
-              aria-label={"imagen de una cara"}
-              alt={"imagen de una cara"}
-              src={"/images/photo.jpg"}
+              aria-label={"imagen de perfil"}
+              alt={"imagen de perfil"}
+              src={"/images/profilePhoto.jpg"}
               className='profileImage'
             />
           </div>
@@ -40,13 +40,13 @@ export default async function AboutMePage() {
               {aboutMeData.body2}
             </p>
           </div>
-          <div className='sm:w-3/12 sm:ml-10 w-full ml-0'>
+          <div className='sm:w-3/12 sm:ml-10 w-50 ml-0'>
             <Image
               priority={true}
               width={500}
               height={250}
-              aria-label={"image computer"}
-              alt={"image computer"}
+              aria-label={"image hobbies"}
+              alt={"image hobbies"}
               src={"/images/senderismo.jpeg"}
               className='h-250 object-cover w-500'
             />
