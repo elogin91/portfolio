@@ -14,7 +14,7 @@ export default async function AboutMePage() {
               height={400}
               aria-label={"imagen de una cara"}
               alt={"imagen de una cara"}
-              src={"/images/photo.JPG"}
+              src={"/images/photo.jpg"}
               className='profileImage'
             />
           </div>
@@ -47,7 +47,7 @@ export default async function AboutMePage() {
               height={250}
               aria-label={"image computer"}
               alt={"image computer"}
-              src={"/images/fondoComputer.jpg"}
+              src={"/images/senderismo.jpeg"}
               className='h-250 object-cover w-500'
             />
           </div>

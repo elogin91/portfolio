@@ -34,7 +34,7 @@ export const Header = ({ pages, name }: HeaderProps) => {
             </div>
           </div>
 
-          <Menu as="div" id="menu" className='menu-wrap flex flex-col'>
+          <Menu as="div" id="menu" className=' items-center menu-wrap flex flex-col'>
             <div className="button-nav">
               <Menu.Button
                 type="button"
@@ -58,7 +58,7 @@ export const Header = ({ pages, name }: HeaderProps) => {
               leaveTo="transform opacity-0 scale-95"
             >
 
-              <Menu.Items className="absolute right-5 z-10 mt-24 w-100 origin-top-right rounded-md bg-puce shadow-lg ">
+              <Menu.Items className="items-center absolute right-5 z-10 mt-24 w-88 origin-top-right rounded-md bg-puce shadow-lg sm:hidden">
                 <div
                   id="navbar-default"
                   className='py-1' >
@@ -68,7 +68,7 @@ export const Header = ({ pages, name }: HeaderProps) => {
                         aria-label={page.label}
                         key={page.id}
                         href={page.link}
-                        className='px-6 py-2 min-w-100 hover:bg-pink font-Oswald rounded-lg font-semibold uppercase tracking-wide bg-none'>
+                        className='px-2 py-2 min-w-100 hover:bg-pink font-Oswald rounded-lg font-semibold uppercase tracking-wide bg-none'>
                         {page.label}
                       </Link>
                       )}</Menu.Item>)

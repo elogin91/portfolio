@@ -11,7 +11,7 @@ export const pages = [
 	},
 	{
 		id: 3,
-		label: "Contáctame",
+		label: "Contacto",
 		link: "/contactMe",
 	},
 ];
